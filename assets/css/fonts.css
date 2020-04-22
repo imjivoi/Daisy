@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "PFEncoreSansPro";
+  font-weight: bold;
+  font-style: normal;
+  src: url(fonts/PFEncoreSansPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: "PFEncoreSansPro";
+  font-weight: 300;
+  font-style: normal;
+
+  src: url(fonts/PFEncoreSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "PFEncoreSansPro";
+  font-weight: 500;
+  font-style: normal;
+
+  src: url(fonts/PFEncoreSansPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: "PFEncoreSansPro";
+  font-weight: 100;
+  font-style: normal;
+
+  src: url(fonts/PFEncoreSansPro-Thin.ttf);
+}

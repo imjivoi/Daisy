@@ -1,0 +1,31 @@
+.business {
+  background: url(/assets/images/business-bg.jpg);
+  background-size: cover;
+  height: 574px;
+}
+
+.business-container {
+  padding: 215px 0 0 0;
+}
+
+h2::before,
+h2::after {
+  display: none;
+}
+
+.business__bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 0 39%;
+  text-align: center;
+  width: 36%;
+}
+
+.business__bottom .mouse__container {
+  top: 55px;
+  left: 10px;
+}
+
+.business-container .arrow__container {
+  top: 1904px;
+}
