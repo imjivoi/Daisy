@@ -122,3 +122,37 @@ ballFour.addEventListener("mouseover", () => {
   ballFive.classList.toggle("pulse");
   txtFour.classList.toggle("active");
 });
+
+///////////SLIDER//////////////
+
+const slide = document.querySelectorAll(".slider__item");
+const arrowL = document.querySelector(".slider__left");
+const arrowR = document.querySelector(".slider__right");
+let currentSlide = 0;
+arrowR.addEventListener("click", () => {
+  for (i = 0; i < slide.length; i++) {
+    slide[i].classList.remove("slide-active");
+  }
+
+  if (currentSlide + 1 == slide.length) {
+    currentSlide = 0;
+    slide[currentSlide].classList.add("slide-active");
+  } else {
+    slide[currentSlide + 1].classList.add("slide-active");
+    currentSlide++;
+  }
+});
+
+arrowL.addEventListener("click", () => {
+  for (i = 0; i < slide.length; i++) {
+    slide[i].classList.remove("slide-active");
+  }
+
+  if (currentSlide - 1 < 0) {
+    currentSlide = slide.length - 1;
+    slide[currentSlide].classList.add("slide-active");
+  } else {
+    slide[currentSlide - 1].classList.add("slide-active");
+    currentSlide--;
+  }
+});

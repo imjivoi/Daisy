@@ -5,6 +5,8 @@
 @import "process.css";
 @import "wedo.css";
 @import "portfolio.css";
+@import "team.css";
+@import "slider.css";
 
 body {
   margin: 0;
