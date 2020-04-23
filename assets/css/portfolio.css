@@ -1,0 +1,163 @@
+.portfolio__header {
+  padding-top: 50px;
+}
+
+.portfolio__title {
+  text-align: center;
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.portfolio__title::after {
+  content: "";
+  position: absolute;
+  width: 145px;
+  height: 2px;
+  left: 22px;
+  top: 43px;
+  background-color: #868686;
+}
+
+.portfolio__menu {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.portfolio__menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 40px;
+  background-color: #868686;
+}
+
+.portfolio__menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -20px;
+  background-color: #868686;
+}
+
+.prtf__menu-item {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fc635e;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.prtf__menu-item:hover {
+  text-decoration: underline;
+}
+
+.prtf__menu-item:first-child {
+  margin-left: 12px;
+}
+
+.prtf__menu-item:last-child {
+  margin-right: 12px;
+}
+
+.portfolio__cards {
+  margin: 60px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prtf__card-item {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.prtf__filter {
+  width: 100%;
+  height: 98%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-color: #fc635e;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.prtf__card-item:hover .prtf__filter {
+  opacity: 0.7;
+  transition: all 0.4s ease;
+}
+
+.cross {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: -25px;
+  top: 0;
+}
+
+.cross-content {
+  position: absolute;
+  width: 45px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+}
+
+.cross-content span {
+  position: absolute;
+  width: 10px;
+  height: 45px;
+  top: -18px;
+  left: 18px;
+
+  background-color: #fff;
+}
+
+.filter__text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  top: 10px;
+  left: 20px;
+  position: absolute;
+}
+
+.button-and-mouse {
+  display: flex;
+  margin: 0 auto 20px;
+  width: 21%;
+}
+
+.prtf__btn {
+  padding-top: 50px;
+}
+
+.prtf__btn-content {
+  font-size: 20px;
+  font-weight: 300;
+  width: 190px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #fc635e;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.prtf__btn-content:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.02);
+}
+
+.prtf__mouse {
+  padding-left: 10px;
+}
