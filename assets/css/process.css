@@ -10,6 +10,7 @@
   position: relative;
   text-align: center;
   margin: 0 auto 25px;
+  width: 192px;
 }
 
 .process__title h3 {
@@ -22,7 +23,7 @@
   width: 190px;
   height: 1px;
   background-color: #868686;
-  left: 375px;
+  left: 0;
   top: 38px;
 }
 

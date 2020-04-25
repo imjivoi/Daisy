@@ -37,6 +37,7 @@ h3 span {
   width: 57%;
   margin: 0 auto;
 }
+
 /*--------hexagon-------------*/
 .hexagon__content {
   margin: 0 auto;
@@ -223,6 +224,11 @@ h3 span {
 .cards__content {
   margin: 70px auto;
   display: flex;
+  flex-wrap: wrap;
+}
+.card__item {
+  width: 230px;
+  margin: 0 auto 30px;
 }
 
 .recieve-arrow__container {
@@ -273,4 +279,11 @@ h3 span {
   left: 13px;
   top: 19px;
   border-radius: 30%;
+}
+
+@media (max-width: 600px) {
+  .card__item {
+    width: 100%;
+    margin: 0px auto 30px;
+  }
 }

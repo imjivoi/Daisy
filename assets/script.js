@@ -1,3 +1,13 @@
+/////MENU BURGER//////////MENU BURGER//////////MENU BURGER/////
+const menuBrg = document.querySelector(".menu__burger");
+const menuBrgCont = document.querySelector(".menu__burger-content");
+const menu = document.querySelector(".header__menu");
+
+menuBrg.addEventListener("click", () => {
+  menuBrgCont.classList.toggle("menu__cross");
+  menu.classList.toggle("show__menu");
+});
+/////MENU BURGER//////////MENU BURGER//////////MENU BURGER/////
 const ballOne = document.querySelector(".ball-one");
 const ballTwo = document.querySelector(".ball-two");
 const ballThree = document.querySelector(".ball-three");
@@ -123,7 +133,7 @@ ballFour.addEventListener("mouseover", () => {
   txtFour.classList.toggle("active");
 });
 
-///////////SLIDER//////////////
+///////////SLIDER/////////////////////////SLIDER/////////////////////////SLIDER//////////////
 
 const slide = document.querySelectorAll(".slider__item");
 const arrowL = document.querySelector(".slider__left");
@@ -156,3 +166,4 @@ arrowL.addEventListener("click", () => {
     currentSlide--;
   }
 });
+///////////SLIDER/////////////////////////SLIDER/////////////////////////SLIDER//////////////

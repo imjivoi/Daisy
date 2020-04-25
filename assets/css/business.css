@@ -1,11 +1,13 @@
 .business {
   background: url(/assets/images/business-bg.jpg);
   background-size: cover;
-  height: 574px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .business-container {
-  padding: 215px 0 0 0;
+  padding: 17% 0 0 0;
 }
 
 h2::before,
@@ -27,5 +29,32 @@ h2::after {
 }
 
 .business-container .arrow__container {
-  top: 1904px;
+  top: 0;
+  position: relative;
+  left: 0;
+  padding: 0 0 15px 0;
+}
+
+@media (max-width: 900px) {
+  .business__bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .business-container {
+    padding: 10% 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-container {
+    padding: 5% 0 0 0;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }

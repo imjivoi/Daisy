@@ -6,6 +6,8 @@
   text-align: center;
   padding-top: 55px;
   position: relative;
+  width: 242px;
+  margin: 0 auto;
 }
 
 .landing__context {
@@ -24,7 +26,7 @@
   height: 1px;
   background-color: #868686;
   top: 125px;
-  left: 355px;
+  left: 0;
 }
 
 .left__title {
@@ -80,6 +82,16 @@
 .landing__right {
   height: 100%;
 }
+
+.right__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .right__img img {
+  width: 100%;
+  height: 100%;
+} */
 
 .advertising {
   background-color: #fff;
@@ -154,4 +166,36 @@
 .marketing__context {
   padding: 125px 0 0 0;
   display: flex;
+}
+
+@media (max-width: 1000px) {
+  .landing__context {
+    flex-direction: column;
+  }
+
+  .right__img img {
+    width: 100%;
+  }
+  .advertising__content {
+    flex-direction: column-reverse;
+  }
+  .advertising__left-image {
+    text-align: center;
+  }
+
+  .advertising__left-image img {
+    width: 100%;
+  }
+
+  .marketing__context {
+    flex-direction: column;
+  }
+
+  .right__img {
+    text-align: center;
+  }
+
+  .right__img img {
+    width: 100%;
+  }
 }

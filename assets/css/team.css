@@ -74,3 +74,16 @@
   opacity: 1;
   transition: all 0.4s ease;
 }
+
+@media (max-width: 1150px) {
+  .team__cards-content {
+    width: 100%;
+    /* flex-wrap: wrap; */
+  }
+}
+@media (max-width: 1000px) {
+  .team__cards-content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
